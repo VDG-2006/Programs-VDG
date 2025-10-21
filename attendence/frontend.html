@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance App</title>
+</head>
+<body>
+    <h2>Add Student</h2>
+    <input id="studentName" />
+    <button onclick="addStudent()">Add</button>
+    <h2>Students</h2>
+    <div id="students"></div>
+
+    <h2>Mark Attendance</h2>
+    <select id="attendStudent"></select>
+    <input id="attDate" placeholder="YYYY-MM-DD">
+    <select id="attStatus"><option value="present">Present</option><option value="absent">Absent</option></select>
+    <button onclick="markAttendance()">Mark</button>
+
+    <h2>Log Activity</h2>
+    <select id="actStudent"></select>
+    <input id="actName">
+    <input id="actDate" placeholder="YYYY-MM-DD">
+    <button onclick="logActivity()">Log</button>
+
+    <h2>View Report</h2>
+    <select id="repStudent"></select>
+    <button onclick="viewReport()">View</button>
+    <pre id="report"></pre>
+
+    <script>
+        function refreshStudents() {
+            fetch('http://localhost:5000/students')
+            .then(r=>r.json()).then(stu=>{
+                let html = '';
+                ["attendStudent", "actStudent", "repStudent"].forEach(id=>{
+                    let sel = document.getElementById(id);
+                    sel.innerHTML = '';
+                    stu.forEach(s=>{
+                        let opt = document.createElement('option');
+                        opt.value=s.id; opt.text=s.name;
+                        sel.appendChild(opt)
+                    })
+                });
+                stu.forEach(s=>{ html += s.name + ' '; });
+                document.getElementById('students').innerText = html;
+            });
+        }
+        refreshStudents();
+
+        function addStudent() {
+            let name = document.getElementById('studentName').value;
+            fetch('http://localhost:5000/add_student', {
+                method:'POST',headers:{'Content-Type':'application/json'},
+                body:JSON.stringify({name:name})
+            }).then(()=>refreshStudents());
+        }
+        function markAttendance() {
+            let student_id = document.getElementById('attendStudent').value;
+            let date = document.getElementById('attDate').value;
+            let status = document.getElementById('attStatus').value;
+            fetch('http://localhost:5000/mark_attendance', {
+                method:'POST',headers:{'Content-Type':'application/json'},
+                body:JSON.stringify({student_id:Number(student_id), date:date, status:status})
+            });
+        }
+        function logActivity() {
+            let student_id = document.getElementById('actStudent').value;
+            let activity = document.getElementById('actName').value;
+            let date = document.getElementById('actDate').value;
+            fetch('http://localhost:5000/log_activity', {
+                method:'POST',headers:{'Content-Type':'application/json'},
+                body:JSON.stringify({student_id:Number(student_id), activity:activity, date:date})
+            });
+        }
+        function viewReport() {
+            let student_id = document.getElementById('repStudent').value;
+            fetch('http://localhost:5000/report/'+student_id)
+            .then(r=>r.json())
+            .then(data=>{
+                document.getElementById('report').innerText = JSON.stringify(data, null, 2);
+            });
+        }
+    </script>
+</body>
+</html>

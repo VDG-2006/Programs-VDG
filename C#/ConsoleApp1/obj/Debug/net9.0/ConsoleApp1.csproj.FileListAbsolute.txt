@@ -1,0 +1,17 @@
+D:\Programs(VDG)\C#\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.exe
+D:\Programs(VDG)\C#\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.deps.json
+D:\Programs(VDG)\C#\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.runtimeconfig.json
+D:\Programs(VDG)\C#\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.dll
+D:\Programs(VDG)\C#\ConsoleApp1\bin\Debug\net9.0\ConsoleApp1.pdb
+D:\Programs(VDG)\C#\ConsoleApp1\bin\Debug\net9.0\Pastel.dll
+D:\Programs(VDG)\C#\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.csproj.AssemblyReference.cache
+D:\Programs(VDG)\C#\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programs(VDG)\C#\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.AssemblyInfoInputs.cache
+D:\Programs(VDG)\C#\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.AssemblyInfo.cs
+D:\Programs(VDG)\C#\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+D:\Programs(VDG)\C#\ConsoleApp1\obj\Debug\net9.0\ConsoleA.CB28C8CC.Up2Date
+D:\Programs(VDG)\C#\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.dll
+D:\Programs(VDG)\C#\ConsoleApp1\obj\Debug\net9.0\refint\ConsoleApp1.dll
+D:\Programs(VDG)\C#\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.pdb
+D:\Programs(VDG)\C#\ConsoleApp1\obj\Debug\net9.0\ConsoleApp1.genruntimeconfig.cache
+D:\Programs(VDG)\C#\ConsoleApp1\obj\Debug\net9.0\ref\ConsoleApp1.dll

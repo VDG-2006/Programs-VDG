@@ -1,0 +1,14 @@
+D:\Programs(VDG)\C#\ToDoList\bin\Debug\net9.0\ToDoList.exe
+D:\Programs(VDG)\C#\ToDoList\bin\Debug\net9.0\ToDoList.deps.json
+D:\Programs(VDG)\C#\ToDoList\bin\Debug\net9.0\ToDoList.runtimeconfig.json
+D:\Programs(VDG)\C#\ToDoList\bin\Debug\net9.0\ToDoList.dll
+D:\Programs(VDG)\C#\ToDoList\bin\Debug\net9.0\ToDoList.pdb
+D:\Programs(VDG)\C#\ToDoList\obj\Debug\net9.0\ToDoList.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programs(VDG)\C#\ToDoList\obj\Debug\net9.0\ToDoList.AssemblyInfoInputs.cache
+D:\Programs(VDG)\C#\ToDoList\obj\Debug\net9.0\ToDoList.AssemblyInfo.cs
+D:\Programs(VDG)\C#\ToDoList\obj\Debug\net9.0\ToDoList.csproj.CoreCompileInputs.cache
+D:\Programs(VDG)\C#\ToDoList\obj\Debug\net9.0\ToDoList.dll
+D:\Programs(VDG)\C#\ToDoList\obj\Debug\net9.0\refint\ToDoList.dll
+D:\Programs(VDG)\C#\ToDoList\obj\Debug\net9.0\ToDoList.pdb
+D:\Programs(VDG)\C#\ToDoList\obj\Debug\net9.0\ToDoList.genruntimeconfig.cache
+D:\Programs(VDG)\C#\ToDoList\obj\Debug\net9.0\ref\ToDoList.dll
