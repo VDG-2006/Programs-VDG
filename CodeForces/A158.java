@@ -17,6 +17,7 @@ public class A158 {
             if(i>0 && i>=minScore) passCount++;
         }
         System.out.println(passCount);
+        sc.close();
     }
     
 }

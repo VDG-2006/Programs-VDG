@@ -13,6 +13,7 @@ public class A71{
                 System.out.println(s);
             }
         }
+        sc.close();
     }
 }
 

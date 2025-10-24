@@ -14,5 +14,6 @@ public class A282 {
             else if(op.equals("--X")) --x;
         }
         System.out.println(x);
+        sc.close();
     }
 }

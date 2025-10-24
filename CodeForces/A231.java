@@ -17,5 +17,6 @@ public class A231 {
             if(count>=2) qCount++;
         }
         System.out.println(qCount);
+        sc.close();
     }
 }
