@@ -26,5 +26,6 @@ public class Tester {
             s.displayDetails(); 
             System.out.println("----------------"); 
         }
+        sc.close();
     }
 }
