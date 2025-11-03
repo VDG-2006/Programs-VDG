@@ -25,6 +25,8 @@ public class Sortings {
             arr[low+i]=temp[i];
         }
     }
+
+
     public static void mergeSort(int[] arr, int low, int high){
         if(low>=high) return;
         int mid=(low+high)/2;
@@ -32,13 +34,39 @@ public class Sortings {
         mergeSort(arr, mid+1, high);
         merge(arr,low,mid, high);
     }
+
+    public static void quickSort(int[] arr, int low, int high){
+        if(low<high){
+            int partition= partition(arr, low , high);
+            quickSort(arr, low, partition-1);
+            quickSort(arr, partition+1, high);
+        }
+    }
+
+    private static int partition(int[] arr, int low, int high){
+        int pivot=arr[low];
+        int left=low;
+        int right=high;
+        while(left<right){
+            while(arr[left]<=pivot && left<high) left++;
+            while(arr[right]>pivot && right>low) right--;
+            if(left<right){
+                int temp=arr[left];
+                arr[left]=arr[right];
+                arr[right]=temp;
+            }
+        }
+        arr[low]=arr[right];
+        arr[right]=pivot;
+        return right;
+    }
     
     public static void main(String[] args){
         Scanner sc=new Scanner((System.in));
         int n=sc.nextInt();
         int[] arr=new int[n];
         for(int i=0;i<n;i++) arr[i]=sc.nextInt();
-        mergeSort(arr,0,n-1);
+        quickSort(arr,0,n-1);
         for(int i: arr) System.out.print(i+" ");
         System.out.println();
         sc.close();
